@@ -22,8 +22,8 @@ body {
     line-height: 130%;
     background-color: var(--light-bg-color);
     color: var(--light-text-color);
-    transition: 1.5s;
-    /* Transition en douceur */
+    transition: 1s;
+    font-size: 15px
 }
 
 /* Styles spécifiques au mode nuit */
@@ -42,7 +42,7 @@ html {
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 3vh;
     font-style: italic;
     color: #20789e;
 }
@@ -52,13 +52,14 @@ header {
     border-radius: 60px;
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     background-color: #4171b6fb;
-    padding: 10px;
+    padding: 1vh;
     color: #fff;
     position: fixed;
     text-align: center;
     top: 20px;
-    margin-left: max(400px, 31vw);
-    width: 45vw;
+    margin-left: 40vw;
+    margin-left: min(34vw)  ;
+    width: 40vw;
     z-index: 999;
 }
 
@@ -115,10 +116,11 @@ header h2 {
     position: fixed;
     top: 0;
     left: 0;
-    width: 200px;
+    width: 20vw;
+    max-width: 200px;
     height: 100vh;
     background-color: #2f3652f3;
-    padding-top: 20px;
+    padding-top: 2vh;
     color: #fff;
 }
 
@@ -145,7 +147,7 @@ header h2 {
 #language-buttons button {
     padding: 10px 10px;
     margin: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 5vh;
     background-color: #2b9aca;
     /* Couleur de fond */
     color: #fff;
@@ -164,14 +166,14 @@ header h2 {
 }
 
 .sidebar ul {
-    margin-top: 30vh;
+    margin-top: 28vh;
     list-style-type: circle;
-    padding-left: 20px;
+    padding-left: 2vw;
 }
 
 .sidebar ul li {
-    margin-bottom: 40px;
-    margin-right: 20px;
+    margin-bottom: 4vh;
+    margin-right: 2vw;
 }
 
 .sidebar ul li a {
@@ -211,10 +213,10 @@ header h2 {
     padding: 5px;
     padding-left: 50px;
     padding-right: 50px;
-    margin-left: min(350px, 100%);
+    margin-left: min(250px, 30%);
     margin-top: 36vh;
     margin-bottom: 50vh;
-    margin-right: min(150px, 80%);
+    margin-right: min(50px, 80%);
     background-color: var(--light-card-color);
     border-radius: 40px;
     /* Ajoutez une marge de 100 pixels en haut et en bas du défilement snap */
@@ -227,10 +229,10 @@ header h2 {
 .dark-mode .section {
     color: white;
     scroll-snap-align: center;
-    margin-left: min(350px, 80%);
+    margin-left: min(250px, 30%);
     margin-top: 36vh;
     margin-bottom: 50vh;
-    margin-right: min(150px, 80%);
+    margin-right: min(50px, 80%);
     background-color: var(--dark-card-color);
     border-radius: 40px;
 }
