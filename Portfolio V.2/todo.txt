@@ -1,5 +1,0 @@
-boutons dark theme et changement de langue : gerer le css
-agrementer les textes
-trouver une autre section a inclure
-trouver un interet a la section interet
-ajouter un onClick() sur les photos pour zoom
