@@ -1,4 +1,7 @@
 # Portfolio de Tom Benchetrit
+![Capture d'écran 2024-04-05 160120](https://github.com/Stoyots/Portfolio/assets/146749062/989a97d4-8957-4b7f-a0fa-045dea4474b1)
+![Capture d'écran 2024-04-05 160036](https://github.com/Stoyots/Portfolio/assets/146749062/3605acf7-8876-4184-a8f1-3ff988ffdc0f)
+
 
 Ce portfolio présente mes compétences en développement web ainsi que mes projets personnels. Je suis un passionné de technologie et de développement web basé à Paris, actuellement en recherche d'alternance dans le domaine de l'informatique.
 
