@@ -619,3 +619,72 @@ header h2 {
     transition: 0.5s;
 
 }
+
+body {
+    animation: theme 21s linear infinite;
+    
+    &:after,
+    &:before {
+        content: '';
+        display: block;
+        position: fixed;
+        z-index: -1;
+        top: 0;
+        width: 100vw;  
+        height: 100vh;
+        width: 100vmax;
+        height: 100vmax;
+        background: rgba(0, 0, 0, 0.055);
+        animation: background 90s linear infinite;
+    }
+
+    &:after {
+        left: 15vw;
+    }
+
+    &:before {
+        right: 15vw;
+        animation-delay: -30s;
+        animation-direction: reverse;
+    }
+}
+
+@keyframes theme {
+    0% {
+        background: #748dc393;
+    }
+    
+    16% {
+        background: #5dbdb73b;
+    }
+    
+    33% {
+        background: #7d59e16b;
+    }
+    
+    50% {
+        background: #51e8cfa1;
+    }
+    
+    66% {
+        background: #fadb5349;
+    }    
+    
+    83% {
+        background: #eb8e153d;
+    }
+
+    100% {
+        background: #748dc393;
+    }
+}
+
+@keyframes background {
+    0% {
+        transform: rotate(0deg);
+    }
+    
+    100% {
+        transform: rotate(360deg);
+    }
+}
