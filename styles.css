@@ -615,7 +615,7 @@ header h2 {
 }
 
 .project-images img:hover {
-    scale: 150%;
+    scale: 180%;
     transition: 0.5s;
 
 }
