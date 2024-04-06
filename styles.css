@@ -14,13 +14,15 @@
 }
 
 * {
-    transition: 0.5s;
+    transition: 1s;
 }
 
 body {
     font-family: "Century Gothic";
     line-height: 130%;
-    background-color: var(--light-bg-color);
+    /* background-color: var(--light-bg-color); */
+    background: rgb(5,94,255);
+    background: linear-gradient(164deg, rgba(45, 118, 255, 0.596) 0%, rgba(249,249,249,1) 64%, rgba(235, 207, 140, 0.582) 86%);
     color: var(--light-text-color);
     transition: 1s;
     font-size: 15px
@@ -28,7 +30,9 @@ body {
 
 /* Styles spécifiques au mode nuit */
 body.dark-mode {
-    background-color: var(--dark-bg-color);
+    /* background-color: var(--dark-bg-color); */
+    background: rgb(2,24,65);
+    background: linear-gradient(164deg, rgba(7, 8, 82, 0.856) 0%, rgb(0, 40, 59) 64%, rgb(34, 0, 44) 86%);
     color: var(--dark-text-color);
 }
 
@@ -49,30 +53,36 @@ h2 {
 
 header {
     transition: 0.3s;
-    border-radius: 60px;
+    border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-    background-color: #4171b6fb;
-    padding: 1vh;
+    /* background-color: #4171b6fb; */
+    background: rgb(63, 72, 117);
+    background: linear-gradient(349deg, rgb(84, 172, 255) 0%, rgb(191, 203, 243) 100%);
+    padding: 0vh;
     color: #fff;
     position: fixed;
     text-align: center;
     top: 20px;
-    margin-left: 40vw;
-    margin-left: min(34vw)  ;
+    margin-left: 42vw;
+    margin-left: min(36vw)  ;
     width: 40vw;
     z-index: 999;
 }
 
-header:hover {
-    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
-    transform: translate3d(0, 0, 0);
-    background-color: #5f90d4fb;
-    perspective: 1000px;
-    border-radius: 20px;
-    transition: 0.7s;
-    padding-left: 10px;
-    padding: 15px;
+.dark-mode header{
+    background: rgb(20, 23, 37);
+    background: linear-gradient(349deg, rgb(67, 80, 92) 0%, rgb(14, 69, 247) 100%);
+}
 
+header:hover {
+    /* animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both; */
+    transform: translate3d(0, 0, 0);
+    background: rgb(24, 27, 218);
+    background: linear-gradient(349deg, rgb(18, 81, 216) 0%, rgb(191, 203, 243) 100%);    perspective: 1000px;
+    border-radius: 40px;
+    transition: 0.3s;
+    padding-left: 10px;
+    padding: 25px;
 }
 
 @keyframes shake {
@@ -112,14 +122,16 @@ header h2 {
 .sidebar {
     display: flex;
     flex-direction: column;
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 20px 4px;
     position: fixed;
     top: 0;
     left: 0;
     width: 20vw;
     max-width: 200px;
     height: 100vh;
-    background-color: #2f3652f3;
+    /* background-color: #2f3652f3; */
+    background: rgb(0,20,115);
+    background: linear-gradient(349deg, rgba(87, 92, 99, 0.473) 0%, rgba(0, 60, 150, 0.658) 100%);
     padding-top: 2vh;
     color: #fff;
 }
@@ -128,7 +140,6 @@ header h2 {
     margin-top: auto;
     padding: 10px 20px;
     margin: auto;
-    background-color: #0c003d;
     color: #fff;
     border-radius: 5px;
     cursor: pointer;
@@ -148,7 +159,7 @@ header h2 {
     padding: 10px 10px;
     margin: 10px;
     margin-bottom: 5vh;
-    background-color: #2b9aca;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;    background-color: #304c6d77;
     /* Couleur de fond */
     color: #fff;
     /* Couleur du texte */
@@ -165,6 +176,7 @@ header h2 {
     /* Changement de couleur au survol */
 }
 
+
 .sidebar ul {
     margin-top: 28vh;
     list-style-type: circle;
@@ -177,9 +189,11 @@ header h2 {
 }
 
 .sidebar ul li a {
+    border-style: double;
+    border-color: #0000002f;
     transition: 0.3s;
-    background-color: #2a314b;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    background-color: #191cb41c;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     border-radius: 19px;
     color: #fff;
     text-decoration: none;
@@ -188,9 +202,9 @@ header h2 {
 }
 
 .sidebar ul li a:hover {
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    background-color: #7490d6ab;
+    background-color: #591a9428;
     /* Couleur de fond au survol */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
     transition: 0.3s;
     /* Transition douce */
 }
@@ -201,23 +215,26 @@ header h2 {
 }
 
 .section {
-    border-width: 5px;
+    /* border-width: 5px;
     border-style: double;
-    border-color: #20202052;
-    position: relative;
+    border-color: #20202052; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;    position: relative;
     transition: 0.3s ease;
     margin: 0 auto;
     scroll-snap-align: center;
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     line-height: 200%;
     padding: 5px;
     padding-left: 50px;
     padding-right: 50px;
-    margin-left: min(250px, 30%);
+    margin-left: min(280px, 30%);
     margin-top: 36vh;
     margin-bottom: 50vh;
-    margin-right: min(50px, 80%);
-    background-color: var(--light-card-color);
+    margin-right: min(80px, 80%);
+    /* background-color: var(--light-card-color); */
+    background: rgb(194, 201, 224);
+    background: linear-gradient(349deg, rgb(255, 236, 196) 0%, rgba(34, 94, 204, 0.575) 100%);  
+    background: rgb(194, 201, 224);
+    background: linear-gradient(349deg, rgb(190, 190, 192) 0%, rgba(0, 119, 255, 0.315) 100%);
     border-radius: 40px;
     /* Ajoutez une marge de 100 pixels en haut et en bas du défilement snap */
     scroll-padding: 100px 0;
@@ -229,24 +246,29 @@ header h2 {
 .dark-mode .section {
     color: white;
     scroll-snap-align: center;
-    margin-left: min(250px, 30%);
+    margin-left: min(280px, 30%);
     margin-top: 36vh;
     margin-bottom: 50vh;
-    margin-right: min(50px, 80%);
-    background-color: var(--dark-card-color);
+    margin-right: min(80px, 80%);
+    /* background-color: var(--dark-card-color); */
+    background: rgb(64,69,87);
+    background: linear-gradient(349deg, rgb(66, 72, 92) 0%, rgba(0, 14, 78, 0.575) 100%);
     border-radius: 40px;
 }
 
 .section:hover {
     transition: 0.3s ease;
-    background-color: #f0f0f0;
+    background: rgb(194, 201, 224);
+    background: linear-gradient(349deg, rgb(255, 236, 196) 0%, rgba(34, 94, 204, 0.575) 100%);  
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     scale: 105%;
     /* Couleur de fond au survol */
 }
 
 .dark-mode .section:hover {
     scale: 105%;
-    background-color: #08485a;
+    background: rgb(64,69,87);
+    background: linear-gradient(349deg, rgb(100, 110, 139) 0%, rgba(0,14,78,1) 100%);
     /* Couleur de fond au survol */
 }
 
