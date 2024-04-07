@@ -1,6 +1,5 @@
 # Portfolio de Tom Benchetrit
-![Capture d'écran 2024-04-05 160120](https://github.com/Stoyots/Portfolio/assets/146749062/989a97d4-8957-4b7f-a0fa-045dea4474b1)
-![Capture d'écran 2024-04-05 160036](https://github.com/Stoyots/Portfolio/assets/146749062/3605acf7-8876-4184-a8f1-3ff988ffdc0f)
+
 
 
 Ce portfolio présente mes compétences en développement web ainsi que mes projets personnels. Je suis un passionné de technologie et de développement web basé à Paris, actuellement en recherche d'alternance dans le domaine de l'informatique.
@@ -38,3 +37,7 @@ Tom Benchetrit - Développeur Web
 Email : tom.benchetrit@gmail.com
 LinkedIn : [Tom Benchetrit](https://www.linkedin.com/in/tom-benchetrit/)
 Instagram : [@stoyots](https://www.instagram.com/stoyots/)
+
+![Capture d'écran 2024-04-07 020151](https://github.com/Stoyots/Portfolio/assets/146749062/d0dfc0f2-2700-4cbe-9753-464e82ed120c)
+![Capture d'écran 2024-04-07 020140](https://github.com/Stoyots/Portfolio/assets/146749062/204443be-4cc1-49e3-9ff5-180777592537)
+![Capture d'écran 2024-04-07 020120](https://github.com/Stoyots/Portfolio/assets/146749062/feec21f2-53bf-46b9-9413-4603d790db9f)
