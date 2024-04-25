@@ -63,10 +63,13 @@ header {
     position: fixed;
     text-align: center;
     top: 20px;
-    margin-left: 42vw;
-    margin-left: min(36vw)  ;
-    width: 40vw;
+    margin-left: 43vw;
+    margin-left: min(40vw)  ;
+    width: 30vw;
     z-index: 99;
+    border: #000000;
+    border-style:groove;
+    border-width: 1px ;
 }
 
 .dark-mode header{
@@ -76,13 +79,15 @@ header {
 
 header:hover {
     /* animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both; */
-    transform: translate3d(0, 0, 0);
-    background: rgb(24, 27, 218);
-    background: linear-gradient(349deg, rgb(18, 81, 216) 0%, rgb(191, 203, 243) 100%);    perspective: 1000px;
-    border-radius: 40px;
+    transform: translate3d(1, 6, 2);
+    background: rgb(52, 54, 218);
+    background: linear-gradient(349deg, rgb(18, 81, 216) 0%, rgb(191, 203, 243) 100%);    
+    perspective: 1000px;
+    border-radius: 10px;
     transition: 0.3s;
-    padding-left: 10px;
-    padding: 25px;
+    box-shadow: rgba(80, 80, 93, 0.76) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.781) 0px 18px 36px -18px inset;
+    border-width: 2px;
+
 }
 
 @keyframes shake {
@@ -219,17 +224,17 @@ header h2 {
     border-style: double;
     border-color: #20202052; */
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;    position: relative;
-    transition: 0.3s ease;
+    transition: 0.7s ease;
     margin: 0 auto;
     scroll-snap-align: center;
     line-height: 200%;
     padding: 5px;
     padding-left: 50px;
     padding-right: 50px;
-    margin-left: min(280px, 30%);
+    margin-left: min(300px, 30%);
     margin-top: 36vh;
     margin-bottom: 50vh;
-    margin-right: min(80px, 80%);
+    margin-right: min(100px, 80%);
     /* background-color: var(--light-card-color); */
     background: rgb(194, 201, 224);
     background: linear-gradient(349deg, rgb(255, 236, 196) 0%, rgba(34, 94, 204, 0.575) 100%);  
@@ -238,18 +243,16 @@ header h2 {
     border-radius: 40px;
     /* Ajoutez une marge de 100 pixels en haut et en bas du défilement snap */
     scroll-padding: 100px 0;
-    /* transition: transform 0.1s ease;
-    transform-style:inherit;
-    will-change: transform; */
+    border-width: 1px;
+    border-style: double;
+    border-color: #00000069;
 }
 
 .dark-mode .section {
     color: white;
     scroll-snap-align: center;
-    margin-left: min(280px, 30%);
     margin-top: 36vh;
     margin-bottom: 50vh;
-    margin-right: min(80px, 80%);
     /* background-color: var(--dark-card-color); */
     background: rgb(64,69,87);
     background: linear-gradient(349deg, rgb(66, 72, 92) 0%, rgba(0, 14, 78, 0.575) 100%);
@@ -615,7 +618,7 @@ header h2 {
 }
 
 .project-images img:hover {
-    scale: 180%;
+    scale: 150%;
     transition: 0.5s;
 
 }
@@ -651,7 +654,7 @@ body {
 
 @keyframes theme {
     0% {
-        background: #748dc393;
+        background: #5778be93;
     }
     
     16% {
@@ -663,7 +666,7 @@ body {
     }
     
     50% {
-        background: #51e8cfa1;
+        background: #51e8cf77;
     }
     
     66% {
@@ -676,6 +679,48 @@ body {
 
     100% {
         background: #748dc393;
+    }
+}
+
+/* Styles pour le mode sombre */
+.dark-mode {
+    animation: dark-theme 21s linear infinite;
+    transition: background-color 0.5s ease; /* Transition lors du changement de thème */
+
+    
+    &:after,
+    &:before {
+        background: rgba(255, 255, 255, 0.055); /* Couleur plus claire pour les éléments d'animation */
+    }
+}
+
+@keyframes dark-theme {
+    0% {
+        background: #7209b7; /* Couleur sombre pour le mode sombre */
+    }
+    
+    16% {
+        background: #3e0481; /* Tons plus sombres pour chaque étape */
+    }
+    
+    33% {
+        background: #430257;
+    }
+    
+    50% {
+        background: #3a0ca3;
+    }
+    
+    66% {
+        background: #191472;
+    }    
+    
+    83% {
+        background: #001574;
+    }
+
+    100% {
+        background: #7209b7;
     }
 }
 

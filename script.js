@@ -161,32 +161,39 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // DEFINI L'EFFET HOVER DES CARTES SECTION
 document.addEventListener("DOMContentLoaded", function() {
-  const sections = document.querySelectorAll('.sectio');
+  const sections = document.querySelectorAll('.section');
 
   sections.forEach(section => {
-      section.addEventListener("mousemove", handleHover);
-      section.addEventListener("mouseleave", resetStyles);
+    section.addEventListener("mousemove", handleHover);
+    section.addEventListener("mouseleave", resetStyles);
   });
 
   function handleHover(e) {
-      const { clientX, clientY, target } = e;
-      const { top, left, width, height } = target.getBoundingClientRect();
+    const section = e.target.closest('.section'); // On s'assure que le hover ne s'applique qu'à la section principale
+    if (!section) return; // Si ce n'est pas une section, on ne fait rien
 
-      const offsetY = (clientY - top) / height;
-      const offsetX = (clientX - left) / width;
+    const { clientX, clientY } = e;
+    const { top, left, width, height } = section.getBoundingClientRect();
 
-      const rotateX = (offsetY - 0.3) * 20;
-      const rotateY = (offsetX - 0.3) * 20;
+    const offsetY = (clientY - top) / height;
+    const offsetX = (clientX - left) / width;
 
-      // Appliquer la transformation à la section
-      target.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+    const rotateX = (offsetY - 0.5) * 10;
+    const rotateY = (offsetX - 0.5) * 10;
+
+    // Appliquer la transformation à la section
+    section.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
   }
 
   function resetStyles(e) {
-      // Réinitialiser la transformation de la section
-      e.target.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg)';
+    const section = e.target.closest('.section'); // Même validation
+    if (!section) return;
+
+    // Réinitialiser la transformation de la section
+    section.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg)';
   }
 });
+
 
 // Obtenir toutes les images avec la classe "enlargeable"
 const enlargeableImages = document.querySelectorAll('.enlargeable');
