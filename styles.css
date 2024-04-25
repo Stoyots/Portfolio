@@ -9,8 +9,8 @@
     /* Couleur de fond en mode nuit */
     --dark-text-color: #000000;
     /* Couleur du texte en mode nuit */
-    --dark-card-color: #0b3d4b;
-    --dark-sub-section: #03617e;
+    --dark-card-color: #0b214b;
+    --dark-sub-section: #032a7ebb;
 }
 
 *{
@@ -25,7 +25,7 @@ body {
     background: linear-gradient(164deg, rgba(45, 118, 255, 0.596) 0%, rgba(249,249,249,1) 64%, rgba(235, 207, 140, 0.582) 86%);
     color: var(--light-text-color);
     transition: 1s;
-    font-size: 15px
+    font-size: 17px
 }
 
 /* Styles spécifiques au mode nuit */
@@ -254,7 +254,7 @@ header h2 {
     margin-top: 36vh;
     margin-bottom: 50vh;
     /* background-color: var(--dark-card-color); */
-    background: rgb(64,69,87);
+    background: rgba(35, 42, 68, 0.582);
     background: linear-gradient(349deg, rgb(66, 72, 92) 0%, rgba(0, 14, 78, 0.575) 100%);
     border-radius: 40px;
 }
