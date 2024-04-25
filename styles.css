@@ -13,7 +13,7 @@
     --dark-sub-section: #032a7ebb;
 }
 
-*{
+* {
     transition: 1s;
 }
 
@@ -21,8 +21,8 @@ body {
     font-family: "Century Gothic";
     line-height: 130%;
     /* background-color: var(--light-bg-color); */
-    background: rgb(5,94,255);
-    background: linear-gradient(164deg, rgba(45, 118, 255, 0.596) 0%, rgba(249,249,249,1) 64%, rgba(235, 207, 140, 0.582) 86%);
+    background: rgb(5, 94, 255);
+    background: linear-gradient(164deg, rgba(45, 118, 255, 0.596) 0%, rgba(249, 249, 249, 1) 64%, rgba(235, 207, 140, 0.582) 86%);
     color: var(--light-text-color);
     transition: 1s;
     font-size: 17px
@@ -31,7 +31,7 @@ body {
 /* Styles spécifiques au mode nuit */
 body.dark-mode {
     /* background-color: var(--dark-bg-color); */
-    background: rgb(2,24,65);
+    background: rgb(2, 24, 65);
     background: linear-gradient(164deg, rgba(7, 8, 82, 0.856) 0%, rgb(0, 40, 59) 64%, rgb(34, 0, 44) 86%);
     color: var(--dark-text-color);
 }
@@ -64,15 +64,15 @@ header {
     text-align: center;
     top: 20px;
     margin-left: 43vw;
-    margin-left: min(40vw)  ;
+    margin-left: min(40vw);
     width: 30vw;
     z-index: 99;
     border: #000000;
-    border-style:groove;
-    border-width: 1px ;
+    border-style: groove;
+    border-width: 1px;
 }
 
-.dark-mode header{
+.dark-mode header {
     background: rgb(20, 23, 37);
     background: linear-gradient(349deg, rgb(67, 80, 92) 0%, rgb(14, 69, 247) 100%);
 }
@@ -81,7 +81,7 @@ header:hover {
     /* animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both; */
     transform: translate3d(1, 6, 2);
     background: rgb(52, 54, 218);
-    background: linear-gradient(349deg, rgb(18, 81, 216) 0%, rgb(191, 203, 243) 100%);    
+    background: linear-gradient(349deg, rgb(18, 81, 216) 0%, rgb(191, 203, 243) 100%);
     perspective: 1000px;
     border-radius: 10px;
     transition: 0.3s;
@@ -135,7 +135,7 @@ header h2 {
     max-width: 200px;
     height: 100vh;
     /* background-color: #2f3652f3; */
-    background: rgb(0,20,115);
+    background: rgb(0, 20, 115);
     background: linear-gradient(349deg, rgba(87, 92, 99, 0.473) 0%, rgba(0, 60, 150, 0.658) 100%);
     padding-top: 2vh;
     color: #fff;
@@ -164,7 +164,8 @@ header h2 {
     padding: 10px 10px;
     margin: 10px;
     margin-bottom: 5vh;
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;    background-color: #304c6d77;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    background-color: #304c6d77;
     /* Couleur de fond */
     color: #fff;
     /* Couleur du texte */
@@ -223,7 +224,8 @@ header h2 {
     /* border-width: 5px;
     border-style: double;
     border-color: #20202052; */
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    position: relative;
     transition: 0.7s ease;
     margin: 0 auto;
     scroll-snap-align: center;
@@ -237,7 +239,7 @@ header h2 {
     margin-right: min(100px, 80%);
     /* background-color: var(--light-card-color); */
     background: rgb(194, 201, 224);
-    background: linear-gradient(349deg, rgb(255, 236, 196) 0%, rgba(34, 94, 204, 0.575) 100%);  
+    background: linear-gradient(349deg, rgb(255, 236, 196) 0%, rgba(34, 94, 204, 0.575) 100%);
     background: rgb(194, 201, 224);
     background: linear-gradient(349deg, rgb(190, 190, 192) 0%, rgba(0, 119, 255, 0.315) 100%);
     border-radius: 40px;
@@ -262,7 +264,7 @@ header h2 {
 .section:hover {
     transition: 0.3s ease;
     background: rgb(194, 201, 224);
-    background: linear-gradient(349deg, rgb(255, 236, 196) 0%, rgba(34, 94, 204, 0.575) 100%);  
+    background: linear-gradient(349deg, rgb(255, 236, 196) 0%, rgba(34, 94, 204, 0.575) 100%);
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     scale: 105%;
     /* Couleur de fond au survol */
@@ -270,8 +272,8 @@ header h2 {
 
 .dark-mode .section:hover {
     scale: 105%;
-    background: rgb(64,69,87);
-    background: linear-gradient(349deg, rgb(100, 110, 139) 0%, rgba(0,14,78,1) 100%);
+    background: rgb(64, 69, 87);
+    background: linear-gradient(349deg, rgb(100, 110, 139) 0%, rgba(0, 14, 78, 1) 100%);
     /* Couleur de fond au survol */
 }
 
@@ -623,9 +625,36 @@ header h2 {
 
 }
 
+/* Conteneur pour l'iframe */
+.iframe-container {
+    position: relative;
+    /* Positionnement relatif pour placer l'iframe */
+    height: 100%;
+    /* Prendre toute la hauteur disponible */
+    width: 100%;
+    /* Prendre toute la largeur disponible */
+}
+
+/* L'iframe qui occupe tout l'espace */
+iframe {
+    position: relative;
+    /* Pour le positionnement absolu */
+    top: 0;
+    /* L'iframe commence en haut */
+    left: 0;
+    /* L'iframe commence à gauche */
+    height: 700px;
+    /* Prendre toute la hauteur disponible */
+    width: 100%;
+    /* Prendre toute la largeur disponible */
+    border: none;
+    /* Pas de bordure */
+    scale: auto;
+}
+
 body {
     animation: theme 21s linear infinite;
-    
+
     &:after,
     &:before {
         content: '';
@@ -633,7 +662,7 @@ body {
         position: fixed;
         z-index: -1;
         top: 0;
-        width: 100vw;  
+        width: 100vw;
         height: 100vh;
         width: 100vmax;
         height: 100vmax;
@@ -656,65 +685,69 @@ body {
     0% {
         background: #5778be93;
     }
-    
+
     16% {
         background: #5dbdb73b;
     }
-    
+
     33% {
         background: #7d59e16b;
     }
-    
+
     50% {
         background: #51e8cf77;
     }
-    
+
     66% {
         background: #fadb5349;
-    }    
-    
+    }
+
     83% {
         background: #eb8e153d;
     }
 
     100% {
-        background: #748dc393;
+        background: #5778be93;
     }
 }
 
 /* Styles pour le mode sombre */
 .dark-mode {
     animation: dark-theme 21s linear infinite;
-    transition: background-color 0.5s ease; /* Transition lors du changement de thème */
+    transition: background-color 0.5s ease;
+    /* Transition lors du changement de thème */
 
-    
+
     &:after,
     &:before {
-        background: rgba(255, 255, 255, 0.055); /* Couleur plus claire pour les éléments d'animation */
+        background: rgba(255, 255, 255, 0.055);
+        /* Couleur plus claire pour les éléments d'animation */
     }
 }
 
 @keyframes dark-theme {
     0% {
-        background: #7209b7; /* Couleur sombre pour le mode sombre */
+        background: #7209b7;
+        /* Couleur sombre pour le mode sombre */
     }
-    
+
     16% {
-        background: #3e0481; /* Tons plus sombres pour chaque étape */
+        background: #3e0481;
+        /* Tons plus sombres pour chaque étape */
     }
-    
+
     33% {
         background: #430257;
     }
-    
+
     50% {
         background: #3a0ca3;
     }
-    
+
     66% {
         background: #191472;
-    }    
-    
+    }
+
     83% {
         background: #001574;
     }
@@ -728,7 +761,7 @@ body {
     0% {
         transform: rotate(0deg);
     }
-    
+
     100% {
         transform: rotate(360deg);
     }
@@ -736,21 +769,30 @@ body {
 
 /* Style de la modal */
 .modal {
-    display: none; /* Caché par défaut */
-    position: fixed; /* Position fixe pour couvrir l'écran */
+    display: none;
+    /* Caché par défaut */
+    position: fixed;
+    /* Position fixe pour couvrir l'écran */
     top: 0;
     left: 0;
-    width: 100%; /* Largeur totale */
-    height: 100%; /* Hauteur totale */
-    background-color: rgba(0, 0, 0, 0.8); /* Opacité pour le fond */
-    justify-content: center; /* Centrer horizontalement */
-    align-items: center; /* Centrer verticalement */
+    width: 100%;
+    /* Largeur totale */
+    height: 100%;
+    /* Hauteur totale */
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Opacité pour le fond */
+    justify-content: center;
+    /* Centrer horizontalement */
+    align-items: center;
+    /* Centrer verticalement */
 }
 
 /* Style de l'image à l'intérieur de la modal */
 .modal img {
-    max-width: 80%; /* Limite la taille de l'image */
-    max-height: 80%; /* Limite la hauteur */
+    max-width: 80%;
+    /* Limite la taille de l'image */
+    max-height: 80%;
+    /* Limite la hauteur */
     z-index: 999;
 
 }
@@ -760,12 +802,16 @@ body {
     position: absolute;
     top: 100px;
     right: 100px;
-    color: white; /* Couleur du bouton de fermeture */
-    font-size: 80px; /* Taille de la police du bouton */
-    cursor: pointer; /* Indique qu'on peut cliquer */
+    color: white;
+    /* Couleur du bouton de fermeture */
+    font-size: 80px;
+    /* Taille de la police du bouton */
+    cursor: pointer;
+    /* Indique qu'on peut cliquer */
 }
 
 /* Changer le curseur au survol des images enlargeable */
 .enlargeable {
-    cursor: pointer; /* Afficher le curseur en forme de main */
+    cursor: pointer;
+    /* Afficher le curseur en forme de main */
 }
