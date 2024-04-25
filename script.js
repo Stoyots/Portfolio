@@ -188,3 +188,30 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 
+// Obtenir toutes les images avec la classe "enlargeable"
+const enlargeableImages = document.querySelectorAll('.enlargeable');
+
+// Obtenir le modal et ses éléments
+const modal = document.getElementById('image-modal');
+const modalImage = document.getElementById('modal-image');
+const closeModal = document.getElementById('close-modal');
+
+// Ajouter un événement de clic à chaque image enlargeable
+enlargeableImages.forEach((image) => {
+    image.addEventListener('click', () => {
+        modalImage.src = image.src; // Changer la source de l'image de la modal
+        modal.style.display = 'flex'; // Afficher le modal
+    });
+});
+
+// Ajouter un événement pour fermer le modal avec le bouton de fermeture
+closeModal.addEventListener('click', () => {
+    modal.style.display = 'none'; // Cacher le modal
+});
+
+// Fermer le modal en cliquant à l'extérieur de l'image
+modal.addEventListener('click', (event) => {
+    if (event.target === modal) {
+        modal.style.display = 'none'; // Cacher le modal
+    }
+});
