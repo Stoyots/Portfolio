@@ -727,21 +727,21 @@ body {
 
 @keyframes dark-theme {
     0% {
-        background: #7209b7;
+        background: #39045c;
         /* Couleur sombre pour le mode sombre */
     }
 
     16% {
-        background: #3e0481;
+        background: #290353;
         /* Tons plus sombres pour chaque étape */
     }
 
     33% {
-        background: #430257;
+        background: #31023f;
     }
 
     50% {
-        background: #3a0ca3;
+        background: #280f61;
     }
 
     66% {
@@ -749,11 +749,11 @@ body {
     }
 
     83% {
-        background: #001574;
+        background: #000f50;
     }
 
     100% {
-        background: #7209b7;
+        background: #39045c;
     }
 }
 

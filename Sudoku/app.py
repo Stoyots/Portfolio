@@ -6,7 +6,10 @@ import time
 app = Flask(__name__, template_folder='templates')
 
 def generate_empty_sudoku():
-    return [['' for _ in range(9)] for _ in range(9)]
+    grid = [['' for _ in range(9)] for _ in range(9)]
+    print(grid) # Ajoute cette ligne pour vérifier la grille générée
+    return grid
+
 
 def is_valid_move(grid, row, col, num):
     if num in grid[row]:
