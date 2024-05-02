@@ -277,7 +277,7 @@ header h2 {
     border-style:groove;
     border-color: #03001a15;
     /* Ajoutez une marge de 100 pixels en haut et en bas du défilement snap */
-    scroll-padding: 120px 0;
+    scroll-padding: 150px 0;
 }
 
 .dark-mode .section {
@@ -295,8 +295,8 @@ header h2 {
     transition: 0.3s ease;
     background: rgb(194, 201, 224);
     background: linear-gradient(349deg, rgb(255, 236, 196) 0%, rgba(34, 94, 204, 0.575) 100%);
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-    scale: 102%;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 50px 4px;
+    scale: 101%;
     /* Couleur de fond au survol */
 }
 
@@ -577,7 +577,6 @@ header h2 {
 
 /* NAV LINK PROJETS */
 .nav-link-proj {
-    max-height: 30px;
     transition: color 0.3s ease;
     overflow: hidden;
 }
