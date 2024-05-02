@@ -178,8 +178,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const offsetY = (clientY - top) / height;
     const offsetX = (clientX - left) / width;
 
-    const rotateX = (offsetY - 0.2) * -5;
-    const rotateY = (offsetX - 0.2) * -5;
+    const rotateX = (offsetY - 0.2) * -2;
+    const rotateY = (offsetX - 0.2) * -2;
 
     // Appliquer la transformation à la section
     section.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;

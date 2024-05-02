@@ -19,15 +19,13 @@
 
 body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 80%;
+    line-height: 10%;
     /* background-color: var(--light-bg-color); */
     background: rgb(5, 94, 255);
     background: linear-gradient(164deg, rgba(45, 118, 255, 0.596) 0%, rgba(249, 249, 249, 1) 64%, rgba(235, 207, 140, 0.582) 86%);
     color: var(--light-text-color);
     transition: 1s;
-    font-size: 17px;
-    font-size: large ;
-    
+    font-size: 20px;
 }
 
 /* Styles spécifiques au mode nuit */
@@ -139,7 +137,7 @@ header h2 {
     top: 0;
     left: 0;
     width: 20vw;
-    max-width: 200px;
+    max-width: 230px;
     height: 100vh;
     /* background-color: #2f3652f3; */
     background: rgb(0, 20, 115);
@@ -166,7 +164,7 @@ header h2 {
 
 .Presentation h2 {
     font-size: 18px; /* Taille de la police pour le statut */
-    color: #5200bdd5; /* Couleur de texte légèrement plus claire pour le statut */
+    color: #ffffffd5; /* Couleur de texte légèrement plus claire pour le statut */
 }
 
 .photo-placeholder{
@@ -232,6 +230,7 @@ header h2 {
 }
 
 .sidebar ul li a {
+    line-height: 15px;
     border-style: double;
     border-color: #0000002f;
     transition: 0.3s;
@@ -262,26 +261,23 @@ header h2 {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     position: relative;
     transition: 0.7s ease;
-    margin: 0 auto;
     scroll-snap-align: center;
     line-height: 200%;
-    padding: 5px;
-    padding-left: 30px;
-    padding-right: 20px;
-    width: 69vw;
+    padding: 30px;
+    width: 67vw;
     margin-left: min(22%);
     margin-top: 36vh;
     margin-bottom: 50vh;
-    margin-right: 9vw;
+    margin-right: 12vw;
     background: linear-gradient(349deg, rgb(255, 236, 196) 0%, rgba(34, 94, 204, 0.575) 100%);
     background: rgb(194, 201, 224);
     background: linear-gradient(349deg, rgb(190, 190, 192) 0%, rgba(0, 119, 255, 0.315) 100%);
     border-radius: 40px;
+    border-width: 3px;
+    border-style:groove;
+    border-color: #03001a15;
     /* Ajoutez une marge de 100 pixels en haut et en bas du défilement snap */
     scroll-padding: 120px 0;
-    border-width: 1px;
-    border-style: double;
-    border-color: #00000069;
 }
 
 .dark-mode .section {
@@ -661,7 +657,7 @@ body {
         width: 100vmax;
         height: 100vmax;
         background: rgba(0, 0, 0, 0.055);
-        animation: background 90s linear infinite;
+        animation: background 130s linear infinite;
     }
 
     &:after {
