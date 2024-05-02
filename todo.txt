@@ -5,3 +5,5 @@ couleurs optimisés
 plus preciser dans le texte l'etat non fini des progremme (axe d'amelioration)
 gerer l'elasticite du scroll (essayer de ne pas depasser les sections de l'ecran)
 gerer les fonts (combinaisons de fonts compatibles)
+gerer les tails de font
+moins de nuances de couleur sur le font (plus subtile)

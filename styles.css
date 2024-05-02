@@ -18,14 +18,16 @@
 }
 
 body {
-    font-family: "Century Gothic";
-    line-height: 130%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 80%;
     /* background-color: var(--light-bg-color); */
     background: rgb(5, 94, 255);
     background: linear-gradient(164deg, rgba(45, 118, 255, 0.596) 0%, rgba(249, 249, 249, 1) 64%, rgba(235, 207, 140, 0.582) 86%);
     color: var(--light-text-color);
     transition: 1s;
-    font-size: 17px
+    font-size: 17px;
+    font-size: large ;
+    
 }
 
 /* Styles spécifiques au mode nuit */
@@ -46,9 +48,14 @@ html {
 }
 
 h2 {
-    font-size: 3vh;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
     font-style: italic;
     color: #20789e;
+}
+
+strong{
+    font-size: large;
 }
 
 header {
@@ -141,6 +148,36 @@ header h2 {
     color: #fff;
 }
 
+.Presentation {
+    position: absolute;
+    top: 0;
+    margin: 15px;
+    line-height: 1.2;
+    box-shadow: inset 0 0 10px rgba(1, 1, 1, 1); /* Ombre interne */
+    border-radius: 10px; /* Coins arrondis pour un aspect plus moderne */
+    text-align: center; /* Centrer le texte horizontalement */
+    color: #000c50; /* Couleur de texte foncée pour une bonne lisibilité */
+}
+
+.Presentation h1 {
+    font-size: 24px; /* Taille de la police pour le nom */
+    margin-bottom: 10px; /* Espacement entre le nom et le statut */
+}
+
+.Presentation h2 {
+    font-size: 18px; /* Taille de la police pour le statut */
+    color: #5200bdd5; /* Couleur de texte légèrement plus claire pour le statut */
+}
+
+.photo-placeholder{
+    width: 18vw;
+    max-width: 110px;
+    margin-top: 20px;
+    border: 2px solid #000000;
+    border-radius: 30%;
+}
+
+
 #toggle-theme {
     margin-top: auto;
     padding: 10px 20px;
@@ -184,14 +221,14 @@ header h2 {
 
 
 .sidebar ul {
-    margin-top: 28vh;
+    margin-top: 32vh;
     list-style-type: circle;
     padding-left: 2vw;
 }
 
 .sidebar ul li {
     margin-bottom: 4vh;
-    margin-right: 2vw;
+    margin-right: 1vw;
 }
 
 .sidebar ul li a {
@@ -221,9 +258,7 @@ header h2 {
 }
 
 .section {
-    /* border-width: 5px;
-    border-style: double;
-    border-color: #20202052; */
+
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     position: relative;
     transition: 0.7s ease;
@@ -231,20 +266,19 @@ header h2 {
     scroll-snap-align: center;
     line-height: 200%;
     padding: 5px;
-    padding-left: 50px;
-    padding-right: 50px;
-    margin-left: min(300px, 30%);
+    padding-left: 30px;
+    padding-right: 20px;
+    width: 69vw;
+    margin-left: min(22%);
     margin-top: 36vh;
     margin-bottom: 50vh;
-    margin-right: min(100px, 80%);
-    /* background-color: var(--light-card-color); */
-    background: rgb(194, 201, 224);
+    margin-right: 9vw;
     background: linear-gradient(349deg, rgb(255, 236, 196) 0%, rgba(34, 94, 204, 0.575) 100%);
     background: rgb(194, 201, 224);
     background: linear-gradient(349deg, rgb(190, 190, 192) 0%, rgba(0, 119, 255, 0.315) 100%);
     border-radius: 40px;
     /* Ajoutez une marge de 100 pixels en haut et en bas du défilement snap */
-    scroll-padding: 100px 0;
+    scroll-padding: 120px 0;
     border-width: 1px;
     border-style: double;
     border-color: #00000069;
@@ -266,12 +300,12 @@ header h2 {
     background: rgb(194, 201, 224);
     background: linear-gradient(349deg, rgb(255, 236, 196) 0%, rgba(34, 94, 204, 0.575) 100%);
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-    scale: 105%;
+    scale: 102%;
     /* Couleur de fond au survol */
 }
 
 .dark-mode .section:hover {
-    scale: 105%;
+    scale: 102%;
     background: rgb(64, 69, 87);
     background: linear-gradient(349deg, rgb(100, 110, 139) 0%, rgba(0, 14, 78, 1) 100%);
     /* Couleur de fond au survol */
@@ -346,9 +380,7 @@ header h2 {
 
 .formulaire {
     width: 100%;
-    /* Utiliser la largeur totale disponible */
     width: 200px;
-    /* Définir une largeur maximale pour le formulaire */
 }
 
 .input-group,
@@ -397,8 +429,6 @@ header h2 {
     flex-wrap: wrap;
     list-style-type: none;
     padding: 10px;
-    /* overflow: hidden; */
-    /* Masquer le texte qui dépasse */
 
 }
 
@@ -415,14 +445,10 @@ header h2 {
 .sub-menu a {
     margin-bottom: 10px;
     display: inline-block;
-    padding: 10px 10px;
-    /* Ajustez le rembourrage selon vos préférences */
+    padding: 15px;
     background-color: #8eabca1e;
-    /* Couleur de fond */
     border-radius: 20px;
-    /* Coins arrondis */
     transition: 0.5s ease;
-    /* Transition pour la couleur de fond */
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
@@ -430,7 +456,6 @@ header h2 {
     transition: 0.5s;
     background-color: #4703c52c;
     box-shadow: rgb(64, 64, 65) 3px 3px 6px 0px inset, rgba(77, 76, 76, 0.5) -3px -3px 6px 1px inset;
-    /* Couleur de fond au survol */
 }
 
 
@@ -438,10 +463,8 @@ header h2 {
     text-decoration: none;
     font-weight: bold;
     color: #20789e;
-    /* Couleur du texte */
     position: relative;
     transition: 0.3s ease;
-    /* Animation de transition de couleur */
 }
 
 .sub-menu ul li a:hover {
@@ -486,7 +509,7 @@ header h2 {
 
 .dark-mode .sub-section-propos:hover {
     transition: 0.6s;
-    background-color: #4e54ff2a;
+    background-color: #4e54ffa8;
 }
 
 .sub-section-propos.active {
@@ -503,7 +526,6 @@ header h2 {
     border: thick double #bdbcbc;
     border-radius: 10px;
     transition: display 0.5s ease;
-    /* Ajoute une transition en douceur */
 }
 
 .sub-section-proj:hover {
@@ -520,7 +542,6 @@ header h2 {
     border-radius: 10px;
     background-color: var(--dark-sub-section);
     transition: display 0.5s ease;
-    /* Ajoute une transition en douceur */
 }
 
 .dark-mode .sub-section-proj:hover {
@@ -536,11 +557,9 @@ header h2 {
 /* NAV LINK A PROPOS */
 .nav-link-propos {
     transition: color 0.3s ease;
-    /* Ajoute une transition de 0.3 secondes à la couleur */
 }
 
 .nav-link-propos.active {
-    /* Ajoutez ici les styles que vous souhaitez appliquer à l'élément du menu actif */
     transition: 0.3s;
     color: #00202e;
     background-color: #8f83ff57;
@@ -550,12 +569,10 @@ header h2 {
 .dark-mode .nav-link-propos {
     transition: color 0.3s ease;
     color: #ffffff85;
-    /* Ajoute une transition de 0.3 secondes à la couleur */
 }
 
 .dark-mode .nav-link-propos.active {
     transition: 0.3s;
-    /* Ajoutez ici les styles que vous souhaitez appliquer à l'élément du menu actif */
     font-weight: bold;
     color: rgba(0, 0, 0, 0.856);
     background-color: #b2aafd57;
@@ -567,12 +584,9 @@ header h2 {
     max-height: 30px;
     transition: color 0.3s ease;
     overflow: hidden;
-    /* Masquer le texte qui dépasse */
-    /* Ajoute une transition de 0.3 secondes à la couleur */
 }
 
 .nav-link-proj.active {
-    /* Ajoutez ici les styles que vous souhaitez appliquer à l'élément du menu actif */
     transition: 0.3s;
     font-weight: bold;
     color: #002738;
@@ -584,71 +598,51 @@ header h2 {
 .dark-mode .nav-link-proj {
     transition: color 0.3s ease;
     color: #ffffff85;
-    /* Ajoute une transition de 0.3 secondes à la couleur */
 }
 
 .dark-mode .nav-link-proj.active {
     transition: 0.3s;
-    /* Ajoutez ici les styles que vous souhaitez appliquer à l'élément du menu actif */
     font-weight: bold;
     color: rgb(0, 0, 0);
     background-color: #b2aafd57;
     box-shadow: rgb(64, 64, 65) 3px 3px 6px 0px inset, rgba(77, 76, 76, 0.5) -3px -3px 6px 1px inset;
 }
 
-/* Styles CSS pour les images */
 .project-images {
     margin-top: 20px;
     display: flex;
-    /* Utilise Flexbox pour aligner les images horizontalement */
     justify-content: space-evenly;
-    /* Centre les images horizontalement */
     gap: 20px;
-    /* Espacement entre les images */
 }
 
 .project-images img {
     transition: 0.5s;
     width: 25%;
-    /* Les images ne dépasseront pas la largeur du conteneur */
     max-height: 400px;
     height: auto;
-    /* Ajuste automatiquement la hauteur pour conserver les proportions */
     border-radius: 10px;
-    /* Ajoute des coins arrondis aux images */
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .project-images img:hover {
-    scale: 150%;
+    scale: 120%;
     transition: 0.5s;
 
 }
 
-/* Conteneur pour l'iframe */
 .iframe-container {
     position: relative;
-    /* Positionnement relatif pour placer l'iframe */
     height: 100%;
-    /* Prendre toute la hauteur disponible */
     width: 100%;
-    /* Prendre toute la largeur disponible */
 }
 
-/* L'iframe qui occupe tout l'espace */
 iframe {
     position: relative;
-    /* Pour le positionnement absolu */
     top: 0;
-    /* L'iframe commence en haut */
     left: 0;
-    /* L'iframe commence à gauche */
     height: 700px;
-    /* Prendre toute la hauteur disponible */
     width: 100%;
-    /* Prendre toute la largeur disponible */
     border: none;
-    /* Pas de bordure */
     scale: auto;
 }
 
@@ -683,7 +677,7 @@ body {
 
 @keyframes theme {
     0% {
-        background: #5778be93;
+        background: #5778be48;
     }
 
     16% {
@@ -691,23 +685,23 @@ body {
     }
 
     33% {
-        background: #7d59e16b;
+        background: #7d59e128;
     }
 
     50% {
-        background: #51e8cf77;
+        background: #51e8cf42;
     }
 
     66% {
-        background: #fadb5349;
+        background: #fadb532a;
     }
 
     83% {
-        background: #eb8e153d;
+        background: #eb8e1523;
     }
 
     100% {
-        background: #5778be93;
+        background: #5778be48;
     }
 }
 
@@ -727,21 +721,21 @@ body {
 
 @keyframes dark-theme {
     0% {
-        background: #39045c;
+        background: #0e0116;
         /* Couleur sombre pour le mode sombre */
     }
 
     16% {
-        background: #290353;
+        background: #16022c;
         /* Tons plus sombres pour chaque étape */
     }
 
     33% {
-        background: #31023f;
+        background: #190020;
     }
 
     50% {
-        background: #280f61;
+        background: #11052c;
     }
 
     66% {
@@ -749,11 +743,11 @@ body {
     }
 
     83% {
-        background: #000f50;
+        background: #000620;
     }
 
     100% {
-        background: #39045c;
+        background: #16022c;
     }
 }
 
