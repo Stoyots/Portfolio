@@ -124,6 +124,18 @@ document.querySelectorAll(".nav-link-proj").forEach((link) => {
   });
 });
 
+// CAROUSEL
+
+document.addEventListener('DOMContentLoaded', function() {
+  const trackCarousel = document.querySelector('.track-carousel');
+  const logoCarousels = document.querySelectorAll('.logo-carousel');
+  const firstLogo = logoCarousels[0].cloneNode(true);
+  const lastLogo = logoCarousels[logoCarousels.length - 1].cloneNode(true);
+
+  trackCarousel.appendChild(firstLogo);
+  trackCarousel.insertBefore(lastLogo, logoCarousels[0]);
+});
+
 
 // Sélectionnez toutes les sections
 const sections = document.querySelectorAll(".section");
