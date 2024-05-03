@@ -60,6 +60,14 @@ strong{
     font-size: large;
 }
 
+a{
+    color: #0019a5cb;
+}
+
+.dark-mode a{
+    color: #9faeffd7;
+}
+
 
 @keyframes shake {
 
