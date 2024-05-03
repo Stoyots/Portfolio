@@ -41,7 +41,7 @@
 }
 
 .wrapper:hover{
-  scale: 130%;
+  scale: 110%;
   transition: 0.5s;
 }
 

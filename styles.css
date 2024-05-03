@@ -4,13 +4,13 @@
     --light-text-color: #000000;
     /* Couleur du texte en mode clair */
     --light-card-color: #9292b14d;
-    --light-sub-section: #e5e7fc;
+    --light-sub-section: #e5e7fc9f;
     --dark-bg-color: #000000c9;
     /* Couleur de fond en mode nuit */
     --dark-text-color: #000000;
     /* Couleur du texte en mode nuit */
     --dark-card-color: #0b214b;
-    --dark-sub-section: #032a7ebb;
+    --dark-sub-section: #032a7e77;
 }
 
 * {
@@ -47,53 +47,19 @@ html {
 
 h2 {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 25px;
-    font-style: italic;
-    color: #20789e;
+    font-size: 30px;
+    font-style:italic;
+    color: #0066ffd7;
+}
+
+.dark-mode h2{
+    color:#006effce ;
 }
 
 strong{
     font-size: large;
 }
 
-header {
-    transition: 0.3s;
-    border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-    /* background-color: #4171b6fb; */
-    background: rgb(63, 72, 117);
-    background: linear-gradient(349deg, rgb(84, 172, 255) 0%, rgb(191, 203, 243) 100%);
-    padding: 0vh;
-    color: #fff;
-    position: fixed;
-    text-align: center;
-    top: 20px;
-    margin-left: 43vw;
-    margin-left: min(40vw);
-    width: 30vw;
-    z-index: 99;
-    border: #000000;
-    border-style: groove;
-    border-width: 1px;
-}
-
-.dark-mode header {
-    background: rgb(20, 23, 37);
-    background: linear-gradient(349deg, rgb(67, 80, 92) 0%, rgb(14, 69, 247) 100%);
-}
-
-header:hover {
-    /* animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both; */
-    transform: translate3d(1, 6, 2);
-    background: rgb(52, 54, 218);
-    background: linear-gradient(349deg, rgb(18, 81, 216) 0%, rgb(191, 203, 243) 100%);
-    perspective: 1000px;
-    border-radius: 10px;
-    transition: 0.3s;
-    box-shadow: rgba(80, 80, 93, 0.76) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.781) 0px 18px 36px -18px inset;
-    border-width: 2px;
-
-}
 
 @keyframes shake {
 
@@ -141,7 +107,7 @@ header h2 {
     height: 100vh;
     /* background-color: #2f3652f3; */
     background: rgb(0, 20, 115);
-    background: linear-gradient(349deg, rgba(87, 92, 99, 0.473) 0%, rgba(0, 60, 150, 0.658) 100%);
+    background: linear-gradient(349deg, rgba(104, 100, 78, 0.473) 0%, rgba(0, 42, 105, 0.658) 100%);
     padding-top: 2vh;
     color: #fff;
 }
@@ -158,6 +124,7 @@ header h2 {
 }
 
 .Presentation h1 {
+    color: #6c9fd4;
     font-size: 24px; /* Taille de la police pour le nom */
     margin-bottom: 10px; /* Espacement entre le nom et le statut */
 }
@@ -231,8 +198,9 @@ header h2 {
 
 .sidebar ul li a {
     line-height: 15px;
-    border-style: double;
-    border-color: #0000002f;
+    border-style:solid;
+    border-width: 1px;
+    border-color: #0066ff75;
     transition: 0.3s;
     background-color: #191cb41c;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
@@ -244,7 +212,7 @@ header h2 {
 }
 
 .sidebar ul li a:hover {
-    background-color: #591a9428;
+    background-color: #0002745b;
     /* Couleur de fond au survol */
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
     transition: 0.3s;
@@ -257,10 +225,9 @@ header h2 {
 }
 
 .section {
-
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     position: relative;
-    transition: 0.7s ease;
+    transition: 0.5s ease;
     scroll-snap-align: center;
     line-height: 200%;
     padding: 30px;
@@ -273,7 +240,7 @@ header h2 {
     background: rgb(194, 201, 224);
     background: linear-gradient(349deg, rgb(190, 190, 192) 0%, rgba(0, 119, 255, 0.315) 100%);
     border-radius: 40px;
-    border-width: 3px;
+    border-width: 2px;
     border-style:groove;
     border-color: #03001a15;
     /* Ajoutez une marge de 100 pixels en haut et en bas du défilement snap */
@@ -292,11 +259,11 @@ header h2 {
 }
 
 .section:hover {
-    transition: 0.3s ease;
     background: rgb(194, 201, 224);
     background: linear-gradient(349deg, rgb(255, 236, 196) 0%, rgba(34, 94, 204, 0.575) 100%);
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 50px 4px;
-    scale: 101%;
+    scale: 102%;
+    transition: scale 0.5s ease;
     /* Couleur de fond au survol */
 }
 
@@ -425,7 +392,7 @@ header h2 {
     flex-wrap: wrap;
     list-style-type: none;
     padding: 10px;
-
+    
 }
 
 .sub-menu ul li {
@@ -439,6 +406,9 @@ header h2 {
 }
 
 .sub-menu a {
+    border-style: solid;
+    border-width: 1px;
+    border-color:#0066ffd7 ;
     margin-bottom: 10px;
     display: inline-block;
     padding: 15px;
@@ -458,14 +428,14 @@ header h2 {
 .sub-menu ul li a {
     text-decoration: none;
     font-weight: bold;
-    color: #20789e;
+    color: #0066ffd7;
     position: relative;
     transition: 0.3s ease;
 }
 
 .sub-menu ul li a:hover {
     transition: 0.3s;
-    color: #0298acc2;
+    color: #5398ff81;
     /* Couleur du texte au survol */
 }
 
@@ -487,7 +457,7 @@ header h2 {
 
 .sub-section-propos:hover {
     transition: 0.6s;
-    background-color: #4e54ff2a;
+    /* background-color: #4e54ff2a; */
 }
 
 .dark-mode .sub-section-propos {
@@ -505,7 +475,7 @@ header h2 {
 
 .dark-mode .sub-section-propos:hover {
     transition: 0.6s;
-    background-color: #4e54ffa8;
+    /* background-color: #4e54ffa8; */
 }
 
 .sub-section-propos.active {
@@ -526,7 +496,7 @@ header h2 {
 
 .sub-section-proj:hover {
     transition: 0.6s;
-    background-color: #4e54ff2a;
+    /* background-color: #4e54ff2a; */
 }
 
 .dark-mode .sub-section-proj {
@@ -542,7 +512,7 @@ header h2 {
 
 .dark-mode .sub-section-proj:hover {
     transition: 0.6s;
-    background-color: #4e54ff2a;
+    /* background-color: #4e54ff2a; */
 }
 
 .sub-section-proj.active {
@@ -666,37 +636,37 @@ body {
     &:before {
         right: 15vw;
         animation-delay: -30s;
-        animation-direction: reverse;
+        /* animation-direction: reverse; */
     }
 }
 
 @keyframes theme {
     0% {
-        background: #5778be48;
+        background: #0034a583;
     }
 
     16% {
-        background: #5dbdb73b;
+        background: #0039b375;
     }
 
     33% {
-        background: #7d59e128;
+        background: #00277c91;
     }
 
     50% {
-        background: #51e8cf42;
+        background: #0019507c;
     }
 
     66% {
-        background: #fadb532a;
+        background: #002f948c;
     }
 
     83% {
-        background: #eb8e1523;
+        background: #0026777c;
     }
 
     100% {
-        background: #5778be48;
+        background: #0043d483;
     }
 }
 
@@ -716,25 +686,25 @@ body {
 
 @keyframes dark-theme {
     0% {
-        background: #0e0116;
+        background: #00032e;
         /* Couleur sombre pour le mode sombre */
     }
 
     16% {
-        background: #16022c;
+        background: #03022c;
         /* Tons plus sombres pour chaque étape */
     }
 
     33% {
-        background: #190020;
+        background: #0c0020;
     }
 
     50% {
-        background: #11052c;
+        background: #0c0029;
     }
 
     66% {
-        background: #191472;
+        background: #03003d;
     }
 
     83% {
@@ -742,7 +712,7 @@ body {
     }
 
     100% {
-        background: #16022c;
+        background: #00032e;
     }
 }
 
@@ -759,29 +729,20 @@ body {
 /* Style de la modal */
 .modal {
     display: none;
-    /* Caché par défaut */
     position: fixed;
-    /* Position fixe pour couvrir l'écran */
     top: 0;
     left: 0;
     width: 100%;
-    /* Largeur totale */
     height: 100%;
-    /* Hauteur totale */
     background-color: rgba(0, 0, 0, 0.8);
-    /* Opacité pour le fond */
     justify-content: center;
-    /* Centrer horizontalement */
     align-items: center;
-    /* Centrer verticalement */
 }
 
 /* Style de l'image à l'intérieur de la modal */
 .modal img {
     max-width: 80%;
-    /* Limite la taille de l'image */
     max-height: 80%;
-    /* Limite la hauteur */
     z-index: 999;
 
 }
@@ -792,15 +753,12 @@ body {
     top: 100px;
     right: 100px;
     color: white;
-    /* Couleur du bouton de fermeture */
     font-size: 80px;
     /* Taille de la police du bouton */
     cursor: pointer;
-    /* Indique qu'on peut cliquer */
 }
 
 /* Changer le curseur au survol des images enlargeable */
 .enlargeable {
     cursor: pointer;
-    /* Afficher le curseur en forme de main */
 }
