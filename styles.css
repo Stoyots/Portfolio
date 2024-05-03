@@ -242,7 +242,7 @@ header h2 {
     transition: 0.5s ease;
     scroll-snap-align: center;
     line-height: 200%;
-    padding: 30px;
+    padding: 40px;
     width: 67vw;
     margin-left: min(22%);
     margin-top: 36vh;
@@ -676,8 +676,8 @@ iframe {
 
 .wrapper-carousel .track-carousel {
     display: flex;
-    width: calc(200px * 5); /* Largeur totale des éléments dupliqués */
-    animation: scroll 17s linear infinite;
+    width: calc(200px * 8); /* Largeur totale des éléments dupliqués */
+    animation: scroll 25s linear infinite;
 }
 
 
@@ -710,8 +710,8 @@ iframe {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
-    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -720,18 +720,14 @@ iframe {
     opacity: 1; /* Affiche le titre */
 }
 
-
-
 @keyframes scroll {
     from {
         transform: translateX(0);
     }
     to {
-        transform: translateX(calc(-200px * 5)); /* Ajuste cette valeur en fonction de la largeur totale des éléments dupliqués */
+        transform: translateX(calc(-200px * 8)); /* Ajuste cette valeur en fonction de la largeur totale des éléments dupliqués */
     }
 }
-
-
    
 body {
     animation: theme 21s linear infinite;
