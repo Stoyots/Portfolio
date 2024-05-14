@@ -113,8 +113,9 @@ header h2 {
     position: fixed;
     top: 0;
     left: 0;
-    width: 20vw;
-    max-width: 230px;
+    width: 18vw;
+    max-width: 200px;
+    min-width: 180px;
     height: 100vh;
     /* background-color: #2f3652f3; */
     background: rgb(0, 20, 115);
@@ -124,6 +125,7 @@ header h2 {
 }
 
 .Presentation {
+    display: block;
     position: absolute;
     top: 0;
     margin: 15px;
@@ -153,7 +155,6 @@ header h2 {
     border: 2px solid #000000;
     border-radius: 30%;
 }
-
 
 #toggle-theme {
     margin-top: auto;
@@ -198,7 +199,7 @@ header h2 {
 
 
 .sidebar ul {
-    margin-top: 32vh;
+    margin-top: min(40vh);
     list-style-type: circle;
     padding-left: 2vw;
 }
@@ -221,6 +222,19 @@ header h2 {
     text-decoration: none;
     display: block;
     padding: 19px;
+}
+
+.liste-section {
+    list-style-type: none;
+    padding: 0;
+}
+
+.liste-section li {
+    margin-bottom: 10px;
+}
+
+#language-buttons {
+    margin-top: auto; /* Place les boutons de langue en bas de la barre latérale */
 }
 
 .sidebar ul li a:hover {
