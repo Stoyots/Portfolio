@@ -81,7 +81,7 @@ document.querySelectorAll(".nav-link-propos").forEach((link) => {
     this.classList.add("active");
 
     // Faire défiler jusqu'à la sous-section active
-    subSection.scrollIntoView({ behavior: 'smooth', block: 'end'});
+    subSection.scrollIntoView({ behavior: 'smooth', block: 'start'});
   });
 });
 
@@ -120,7 +120,7 @@ document.querySelectorAll(".nav-link-proj").forEach((link) => {
     this.classList.add("active");
 
     // Faire défiler jusqu'à la sous-section active
-    subSection.scrollIntoView({ behavior: 'smooth', block: 'end' });
+    subSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
 });
 
