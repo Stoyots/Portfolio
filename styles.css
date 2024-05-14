@@ -682,7 +682,7 @@ iframe {
 
 
 .wrapper-carousel .logo-carousel img {
-    margin: 30px; /* Ajuste l'espace entre les images */
+    margin: 25px; /* Ajuste l'espace entre les images */
     height: 150px;
     border-radius: 10px;
     border-width: 1px;
@@ -691,7 +691,7 @@ iframe {
 }
 
 .wrapper-carousel .logo-carousel video {
-    margin: 30px;
+    margin: 25px;
     height: 150px;
     border-radius: 10px;
     border-width: 1px;

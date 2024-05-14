@@ -127,12 +127,18 @@ document.querySelectorAll(".nav-link-proj").forEach((link) => {
 // CAROUSEL
 
 document.addEventListener('DOMContentLoaded', function() {
+  // Sélectionner la piste du carrousel
   const trackCarousel = document.querySelector('.track-carousel');
+  // Sélectionner tous les logos dans le carrousel
   const logoCarousels = document.querySelectorAll('.logo-carousel');
+  // Cloner le premier logo pour l'ajouter à la fin
   const firstLogo = logoCarousels[0].cloneNode(true);
-  const lastLogo = logoCarousels[logoCarousels.length - 3].cloneNode(true);
+  // Cloner le dernier logo pour l'ajouter au début
+  const lastLogo = logoCarousels[logoCarousels.length - 1].cloneNode(true);
 
+  // Ajouter le clone du premier logo à la fin de la piste du carrousel
   trackCarousel.appendChild(firstLogo);
+  // Insérer le clone du dernier logo au tout début de la piste du carrousel
   trackCarousel.insertBefore(lastLogo, logoCarousels[0]);
 });
 
