@@ -1,0 +1,144 @@
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 20px 4px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 18vw;
+    max-width: 200px;
+    min-width: 180px;
+    height: 100vh;
+    /* background-color: #2f3652f3; */
+    background: rgb(0, 20, 115);
+    background: linear-gradient(349deg, rgba(104, 100, 78, 0.473) 0%, rgba(0, 42, 105, 0.658) 100%);
+    padding-top: 1vh;
+    color: #fff;
+}
+
+.Presentation {
+    display: block;
+    position: absolute;
+    top: 0;
+    margin: 15px;
+    line-height: 1.2;
+    box-shadow: inset 0 0 10px rgba(1, 1, 1, 1); /* Ombre interne */
+    border-radius: 10px; /* Coins arrondis pour un aspect plus moderne */
+    text-align: center; /* Centrer le texte horizontalement */
+    color: #000c50; /* Couleur de texte foncée pour une bonne lisibilité */
+    background-color: #221a8d33;
+}
+
+.Presentation h1 {
+    color: #6c9fd4;
+    font-size: 24px; /* Taille de la police pour le nom */
+    margin-bottom: 10px; /* Espacement entre le nom et le statut */
+}
+
+.Presentation h2 {
+    font-size: 18px; /* Taille de la police pour le statut */
+    color: #ffffffd5; /* Couleur de texte légèrement plus claire pour le statut */
+}
+
+.photo-placeholder{
+    width: 18vw;
+    max-width: 110px;
+    margin-top: 20px;
+    border: 2px solid #000000;
+    border-radius: 30%;
+}
+
+#toggle-theme {
+    margin-top: auto;
+    padding: 10px 20px;
+    margin: auto;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+#toggle-theme:hover {
+    background-color: #93c6db;
+}
+
+#language-buttons {
+    margin-top: auto;
+    text-align: center;
+}
+
+#language-buttons button {
+    padding: 10px 10px;
+    margin: 10px;
+    margin-bottom: 5vh;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    background-color: #304c6d77;
+    /* Couleur de fond */
+    color: #fff;
+    /* Couleur du texte */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06px) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    transition: background-color 0.3s ease;
+    /* Transition en douceur */
+}
+
+#language-buttons button:hover {
+    background-color: #0056b3;
+    /* Changement de couleur au survol */
+}
+
+
+.sidebar ul {
+    margin-top: min(40vh);
+    list-style-type: circle;
+    padding-left: 2vw;
+}
+
+.sidebar ul li {
+    margin-bottom: 3vh;
+    margin-right: 1vw;
+}
+
+.sidebar ul li a {
+    line-height: 19px;
+    border-style:solid;
+    border-width: 2px;
+    border-color: #0066ff75;
+    transition: 0.3s;
+    background-color: #191cb41c;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border-radius: 19px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 19px;
+}
+
+.liste-section {
+    list-style-type: none;
+    padding: 0;
+}
+
+.liste-section li {
+    margin-bottom: 10px;
+}
+
+#language-buttons {
+    margin-top: auto; /* Place les boutons de langue en bas de la barre latérale */
+}
+
+.sidebar ul li a:hover {
+    background-color: #0002745b;
+    /* Couleur de fond au survol */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    transition: 0.3s;
+    /* Transition douce */
+}
+
+.nav-link-menu.active {
+    transition: 0.3s;
+    background-color: #84a5f786;
+}

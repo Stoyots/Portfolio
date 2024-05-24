@@ -1,0 +1,189 @@
+:root {
+    --light-bg-color: #ffffff;
+    /* Couleur de fond en mode clair */
+    --light-text-color: #000000;
+    /* Couleur du texte en mode clair */
+    --light-card-color: #9292b14d;
+    --light-sub-section: #e5e7fc9f;
+    --dark-bg-color: #000000c9;
+    /* Couleur de fond en mode nuit */
+    --dark-text-color: #000000;
+    /* Couleur du texte en mode nuit */
+    --dark-card-color: #0b214b;
+    --dark-sub-section: #032a7e77;
+}
+
+* {
+    transition: 1s;
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 10%;
+    /* background-color: var(--light-bg-color); */
+    background: rgb(5, 94, 255);
+    background: linear-gradient(164deg, rgba(45, 118, 255, 0.596) 0%, rgba(249, 249, 249, 1) 64%, rgba(235, 207, 140, 0.582) 86%);
+    color: var(--light-text-color);
+    transition: 1s;
+    font-size: 20px;
+}
+
+/* Styles spécifiques au mode nuit */
+body.dark-mode {
+    /* background-color: var(--dark-bg-color); */
+    background: rgb(2, 24, 65);
+    background: linear-gradient(164deg, rgba(7, 8, 82, 0.856) 0%, rgb(0, 40, 59) 64%, rgb(34, 0, 44) 86%);
+    color: var(--dark-text-color);
+}
+
+/* Ajoutez vos autres styles CSS ici */
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    /* Ajoutez une marge de 100 pixels en haut et en bas du défilement snap */
+    scroll-padding: 200px 0;
+
+}
+
+h2 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    font-style:italic;
+    color: #ffffff;
+    text-shadow: 
+    1px -2px 0 rgb(0, 0, 0),  /*top-right shadow */
+    2px 1px 0 rgb(0, 0, 0);   /* bottom-right shadow */
+}
+
+.dark-mode h2{
+    color:#006effce ;
+}
+
+strong{
+    font-size:large;
+}
+
+a{
+    color: #0019a5cb;
+}
+
+.dark-mode a{
+    color: #9faeffd7;
+}
+
+
+   
+body {
+    animation: theme 21s linear infinite;
+
+    &:after,
+    &:before {
+        content: '';
+        display: block;
+        position: fixed;
+        z-index: -1;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        width: 100vmax;
+        height: 100vmax;
+        background: rgba(0, 0, 0, 0.055);
+        animation: background 130s linear infinite;
+    }
+
+    &:after {
+        left: 15vw;
+    }
+
+    &:before {
+        right: 15vw;
+        animation-delay: -30s;
+        /* animation-direction: reverse; */
+    }
+}
+
+@keyframes theme {
+    0% {
+        background: #0034a583;
+    }
+
+    16% {
+        background: #0039b375;
+    }
+
+    33% {
+        background: #00277c91;
+    }
+
+    50% {
+        background: #0019507c;
+    }
+
+    66% {
+        background: #002f948c;
+    }
+
+    83% {
+        background: #0026777c;
+    }
+
+    100% {
+        background: #0043d483;
+    }
+}
+
+/* Styles pour le mode sombre */
+.dark-mode {
+    animation: dark-theme 21s linear infinite;
+    transition: background-color 0.5s ease;
+    /* Transition lors du changement de thème */
+
+
+    &:after,
+    &:before {
+        background: rgba(255, 255, 255, 0.055);
+        /* Couleur plus claire pour les éléments d'animation */
+    }
+}
+
+@keyframes dark-theme {
+    0% {
+        background: #00032e;
+        /* Couleur sombre pour le mode sombre */
+    }
+
+    16% {
+        background: #03022c;
+        /* Tons plus sombres pour chaque étape */
+    }
+
+    33% {
+        background: #0c0020;
+    }
+
+    50% {
+        background: #0c0029;
+    }
+
+    66% {
+        background: #03003d;
+    }
+
+    83% {
+        background: #000620;
+    }
+
+    100% {
+        background: #00032e;
+    }
+}
+
+@keyframes background {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

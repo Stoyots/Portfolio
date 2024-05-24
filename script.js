@@ -124,23 +124,24 @@ document.querySelectorAll(".nav-link-proj").forEach((link) => {
   });
 });
 
-// CAROUSEL
-
 document.addEventListener('DOMContentLoaded', function() {
-  // Sélectionner la piste du carrousel
-  const trackCarousel = document.querySelector('.track-carousel');
-  // Sélectionner tous les logos dans le carrousel
-  const logoCarousels = document.querySelectorAll('.logo-carousel');
-  // Cloner le premier logo pour l'ajouter à la fin
-  const firstLogo = logoCarousels[0].cloneNode(true);
-  // Cloner le dernier logo pour l'ajouter au début
-  const lastLogo = logoCarousels[logoCarousels.length - 1].cloneNode(true);
-
-  // Ajouter le clone du premier logo à la fin de la piste du carrousel
-  trackCarousel.appendChild(firstLogo);
-  // Insérer le clone du dernier logo au tout début de la piste du carrousel
-  trackCarousel.insertBefore(lastLogo, logoCarousels[0]);
+  // Initialisez le carousel avec les options de configuration
+  $('.slick-carousel').slick({
+    slidesToShow: 5, // Nombre d'éléments à afficher à la fois
+    slidesToScroll: 1, // Nombre d'éléments à faire défiler à la fois
+    infinite: true, // Navigation infinie
+    autoplay: true, // Lecture automatique
+    autoplaySpeed: 4000, // Vitesse de lecture automatique en millisecondes
+    arrows: true, // Désactiver les flèches de navigation
+    pauseOnHover: false, // Ne pas mettre en pause au survol
+    pauseOnFocus: false, // Ne pas mettre en pause au focus
+    swipe: true, // Activer le défilement tactile
+    touchMove: true, // Activer le défilement tactile
+    draggable: true, // Activer le défilement avec la souris
+    speed: 3000, // Vitesse de transition en millisecondes
+  });
 });
+
 
 
 // Sélectionnez toutes les sections
