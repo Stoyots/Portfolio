@@ -14,8 +14,8 @@ Ce portfolio présente mes compétences en développement web ainsi que mes proj
 ## Langages et Technologies Utilisés
 
 - HTML
-- CSS (incluant Tailwind CSS)
-- JavaScript (y compris React)
+- CSS 
+- JavaScript 
 - Node.js
 - Python
 - Utilisation d'outils tels que VSCode, GitHub
