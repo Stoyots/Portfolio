@@ -131,14 +131,16 @@ document.addEventListener('DOMContentLoaded', function() {
     slidesToScroll: 1, // Nombre d'éléments à faire défiler à la fois
     infinite: true, // Navigation infinie
     autoplay: true, // Lecture automatique
-    autoplaySpeed: 4000, // Vitesse de lecture automatique en millisecondes
-    arrows: true, // Désactiver les flèches de navigation
+    autoplaySpeed: 2000, // Vitesse de lecture automatique en millisecondes
+    arrows: true, // Activer les flèches de navigation
+    prevArrow: '<button type="button" class="slick-prev">Previous</button>', // Flèche gauche
+    nextArrow: '<button type="button" class="slick-next">Next</button>', // Flèche droite
     pauseOnHover: false, // Ne pas mettre en pause au survol
     pauseOnFocus: false, // Ne pas mettre en pause au focus
     swipe: true, // Activer le défilement tactile
     touchMove: true, // Activer le défilement tactile
     draggable: true, // Activer le défilement avec la souris
-    speed: 3000, // Vitesse de transition en millisecondes
+    speed: 4000, // Vitesse de transition en millisecondes
   });
 });
 

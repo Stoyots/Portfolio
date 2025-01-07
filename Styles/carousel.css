@@ -1,7 +1,7 @@
 
 /* CAROUSEL  */
 .top-container{
-    margin: 30px;
+    margin: 20px;
 	height: 20vh;
 	display: flex;
 	align-items: center;
@@ -13,14 +13,14 @@
 	background-color: #e1e2e277;
 	height: auto;
 	overflow: hidden;
-	position: relative;
-	width: 90%;
+	position:relative;
+	width: 97%;
 	display: flex;
 	align-items: center;
-	padding: 0 20px;
+	padding: 5px;
     border-radius: 20px;
-    border-style:double ;
-    border-width: 3px;
+    border-style: double ;
+    border-width: 5px;
     border-color: #0f309e85;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
@@ -50,9 +50,10 @@
 }
 
 
-.wrapper-carousel .logo-carousel img {
-    margin: 25px; /* Ajuste l'espace entre les images */
-    margin-left: 4vw;
+/* Ajustez l'espace entre les images et les vidéos */
+.wrapper-carousel .logo-carousel img,
+.wrapper-carousel .logo-carousel video {
+    margin: 10px; /* Ajuste l'espace entre les images et les vidéos */
     height: 150px;
     border-radius: 10px;
     border-width: 1px;
@@ -60,18 +61,37 @@
     border-style: solid;
 }
 
-.wrapper-carousel .logo-carousel video {
-    margin-right: -50px;
-    margin: 25px;
-    height: 150px;
-    border-radius: 10px;
-    border-width: 1px;
-    border-color: #000000;
-    border-style: solid;
+/* Styles pour les flèches de navigation */
+.slick-prev, .slick-next {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.75;
+}
+
+.slick-prev {
+    left: 10px;
+    transform: translateY(-50%);
+    top: 50%;
+    position: absolute;
+}
+
+.slick-next {
+    right: 40px;
+    transform: translateY(-50%);
+    top: 50%;
+    position: absolute;
 }
 
 .logo-carousel:hover {
-    cursor:grab;
+    cursor: grab;
     scale: 103%;
 }
 
@@ -83,10 +103,11 @@
     filter: brightness(50%);
 }
 
+/* Centrez le texte */
 .logo-carousel .title {
     position: absolute;
     top: 50%;
-    left: 43%;
+    left: 50%;
     transform: translate(-50%, -50%);
     color: rgb(255, 255, 255);
     font-size: 15px;
