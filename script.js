@@ -176,6 +176,8 @@ document.addEventListener('DOMContentLoaded', function() {
   var formulaire = document.getElementById('monFormulaire');
   formulaire.style.width = '40vw'; // Définir la largeur à 80%
   formulaire.style.height = '120px'; // Définir la hauteur à 300px
+  formulaire.style.marginLeft = '250px'; // Ajouter une marge à gauche de 20px
+
 });
 
 // DEFINI L'EFFET HOVER DES CARTES SECTION
